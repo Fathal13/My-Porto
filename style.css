@@ -1,0 +1,586 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Ini Navbar */
+header {
+    width: 100%;
+    background-color: #1A2238;
+    color: #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    cursor: pointer;
+    display: flex;
+    margin-right: auto;
+    font-size: 24px;
+    padding: 10px;
+    margin-left: 5px;
+}
+.logo:hover {
+    color: #FF6A3D;
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+}
+.u-list {
+    display: flex;
+    transform: none;
+    padding: 10px;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+.list {
+    list-style-type: none;
+    padding: 7px;
+}
+.list .text-dekor{
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.text-dekor:hover {
+    color: #FF6A3D;
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+}
+#menu-bar {
+    display: none;
+}
+.menu {
+    font-size: 18px;
+    display: none;
+}
+.btn-up {
+    position: fixed;
+    bottom: 75px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(194, 194, 194);
+    overflow: hidden;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.btn-up a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: black;
+    width: 40px;
+    height: 50px;
+    font-size: 30px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.btn-up > a:hover {
+    background-color: #1A2238;
+    color: white;
+}
+.darkmode {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background-color: rgb(194, 194, 194);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.darkmode > a {
+    padding: 13px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.darkmode > a:hover {
+    background-color: #1A2238;
+    color: white;
+}
+.container.dark {
+    background-color: black;
+    color: white;
+}
+.container.dark .garis {
+    background-color: white;
+}
+.container.dark .col-kontak2 {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.container.dark .card {
+    background-color: white;
+    color: black;
+    box-shadow: -5px -5px 1px #444;
+}
+.container.dark .col-kontak .btn a {
+    border: 2px solid white;
+}
+.fa-sort-asc.dark {
+    color: white;
+    background-color: #1A2238;
+}
+.fa-sort-asc.dark:hover {
+    color: black;
+    background-color:  rgb(194, 194, 194);
+}
+.fa-adjust.dark {
+    color: white;
+    background-color: #1A2238;
+}
+.fa-adjust.dark:hover {
+    color: black;
+    background-color: rgb(194, 194, 194);
+}
+
+/* Ini Konten */
+h2 {
+    padding: 10px;
+}
+.garis {
+    position: relative;
+    width: auto;
+    height: 2px;
+    background-color: black;
+    animation: garis 5s infinite alternate;
+    -webkit-animation: garis 5s infinite alternate;
+}
+.top {
+    width: auto;
+    height: 2px;
+    margin-left: auto;
+    background-color: black;
+}
+@keyframes garis {
+    0% {
+        width: 7%;
+    } 50% {
+        width: 50%;
+    } 100% {
+        width: 100%;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
+}
+.nama {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrap-nama {
+    display: flex;
+    flex-wrap: wrap;
+}
+h1 {
+    font-size: 45px;
+}
+span{
+    display: inline-block;
+    cursor: pointer;
+    transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -ms-transition: color .5s ease;
+    -o-transition: color .5s ease;
+}
+span:hover {
+    color: rgb(149, 16, 16);
+    transform: translate(2px, -3px) rotate(2deg) scale(1.2);
+    -webkit-transform: translate(2px, -3px) rotate(2deg) scale(1.2);
+    -moz-transform: translate(2px, -3px) rotate(2deg) scale(1.2);
+    -ms-transform: translate(2px, -3px) rotate(2deg) scale(1.2);
+    -o-transform: translate(2px, -3px) rotate(2deg) scale(1.2);
+}
+.job {
+    font-size: 30px;
+}
+.foto-profil {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 100vh;
+}
+.foto1 {
+    width: 45vh;
+    height: 70vh;
+}
+
+/* Ini About */
+.foto-frontend {
+    margin: 20px;
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto2 {
+    width: 90vh;
+    height: 70vh;
+}
+.about {
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.answer {
+    font-size: 18px;
+}
+
+/* Ini Latar Belakang */
+.col-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    margin: 20px;
+    border: 2px solid black;
+    width: 35vh;
+    height: 40vh;
+    box-shadow: -5px -5px 1px #222;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 2s ease .5s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: 2s ease .5s;
+    -moz-transition: 2s ease .5s;
+    -ms-transition: 2s ease .5s;
+    -o-transition: 2s ease .5s;
+}
+.card:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+h3 {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 2px solid black;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+}
+ul {
+    transform: translate(4vh, 0);
+    -webkit-transform: translate(4vh, 0);
+    -moz-transform: translate(4vh, 0);
+    -ms-transform: translate(4vh, 0);
+    -o-transform: translate(4vh, 0);
+}
+li {
+    font-size: 18px;
+    padding: 5px;
+}
+/* Ini Contact */
+.kolom {
+    display: flex;
+    flex-direction: column;
+}
+.kontak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-kontak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.info-kontak {
+    margin: 5px;
+    padding: 5px;
+    font-size: 35px;
+}
+.yusuf {
+    margin: 20px;
+    padding: 5px;
+    font-size: 22px;
+}
+.col-kontak1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.col-kontak2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vh;
+    gap: 30px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.col-kontak3 {
+    display: flex;
+}
+.ig {
+    transform: translate(-17px,0);
+    -webkit-transform: translate(-17px,0);
+    -moz-transform: translate(-17px,0);
+    -ms-transform: translate(-17px,0);
+    -o-transform: translate(-17px,0);
+}
+.github {
+    transform: translate(-23px,0);
+    -webkit-transform: translate(-23px,0);
+    -moz-transform: translate(-23px,0);
+    -ms-transform: translate(-23px,0);
+    -o-transform: translate(-23px,0);
+}
+h4 {
+    text-decoration: underline;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+}
+.alamat {
+    width: 30vw;
+}
+.btn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 45vh;
+}
+.kerja-sama {
+    color: black;
+    padding: 8px 8px;
+    background-color: rgb(84, 189, 224);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 1s ease-in;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.kerja-sama:hover {
+    transform: scale(1.7);
+    -webkit-transform: scale(1.7);
+    -moz-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -o-transform: scale(1.7);
+}
+
+/* Ini Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1A2238;
+    color: #eaeaea;
+}
+
+@media screen and (max-width: 476px) {
+    /* Ini navbar */
+    nav {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid white;
+        width: 100vw;
+    }
+    .menu {
+        display: initial;
+        padding: 10px;
+    }
+    #menu-bar:checked ~ nav {
+        display: initial;
+    }
+    /* Akhir dari navbar */
+
+    .wmNama {
+        width: 100%;
+        font-size: 100px;
+        position: fixed;
+    }
+    .wrapper {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .nama {
+        width: 100%;
+        height: auto;
+    }
+    .wrap-nama {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .foto-profil {
+        width: 100%;
+        height: auto;
+    }
+    .foto1 {
+        width: 90%;
+        height: 60vh;
+        padding: 15px;
+    }
+    /* Ini About */
+    .foto-frontend {
+        width: 100%;
+        height: 30vh;
+    }
+    .foto2 {
+        width: 100%;
+        height: 30vh;
+    }
+    .about {
+        width: 100%;
+        height: auto;
+    }
+    .question {
+        margin: 15px;
+        padding: 10px;
+    }
+    .answer {
+        font-size: 24px;
+        margin: 15px;
+        margin-top: 0;
+        padding: 10px;
+    }
+    /* Ini Latar Belakang */
+    .col-card {
+        height: auto;
+    }
+    .card {
+        width: 55vw;
+        height: auto;
+    }
+    .card:hover {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
+    }
+    ul {
+        width: 47vw;
+        transform: translate(7vw,0);
+        -webkit-transform: translate(7vw,0);
+        -moz-transform: translate(7vw,0);
+        -ms-transform: translate(7vw,0);
+        -o-transform: translate(7vw,0);
+}
+
+    /* Ini Contact */
+    .kontak {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .col-kontak {
+        width: 100%;
+        height: auto;
+    }
+    .col-kontak1 {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        border-top: 1px solid black;
+    }
+    .col-kontak2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .container.dark .col-kontak2 {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: none;
+        border-right: none;
+    }
+    .col-kontak3 {
+        height: 30vh;
+    }
+    .alamat {
+        width: 100%;
+    }
+    .btn {
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
